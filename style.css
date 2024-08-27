@@ -306,10 +306,13 @@ textarea::selection{
   animation-delay: .3s;
 }
 @keyframes entryAnim{
-  from{
+  0%{
     opacity: 100%;
   }
-  to{
+  50%{
+    opacity: 100%;
+  }
+  100%{
     opacity: 0%;
   }
 }
