@@ -119,10 +119,13 @@ document.querySelector("#generateB").addEventListener("click", () => {
 
 document.querySelector('#playB').addEventListener('click', ()=>{
   document.querySelector("audio").play();
-})
+});
 document.querySelector('#pauseB').addEventListener('click', ()=>{
   document.querySelector("audio").pause();
-})
+});
 document.querySelector('#downloadB').addEventListener('click', ()=>{
   document.querySelector("#audioD").download = 'TextaVox.mp3';
-})
+});
+setTimeout(()=>{
+  document.querySelector('.entry').style.display = 'none';
+},1000);
