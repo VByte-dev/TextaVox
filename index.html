@@ -29,7 +29,7 @@
       <div id="rTop">
         <h1><b style="background-color: #fbca1f; padding: 0px 10px;">TextaVox</b> Where your text gets a voice of its own!</h1>
       </div>
-      <div id="rDown">
+      <div id="rDown" title="Controls">
 
         <div><audio id="audio" src=""></audio></div>
 
@@ -45,7 +45,7 @@
 
     <!-- Left Side -->
     <div id="homeL">
-      <div id="character">
+      <div id="character" title="Character">
         <label>Character : </label>
         <button class="chr1">Dan</button>
         <button class="chr2">Will</button>
@@ -60,7 +60,7 @@
       <div id="pitch">
         <input id='pitchB' type="number" placeholder="Specify the pitch(0.5 to 1.5)" min="0" max="1.5" step="0.1">
       </div>
-      <div id="text"><textarea placeholder="Enter the text content" id="textContent" cols="30" rows="10"></textarea>
+      <div id="text"><textarea placeholder="Write your content here" id="textContent" cols="30" rows="10"></textarea>
       </div>
 
       <div class="generateB"><a href="#audioS"><button id="generateB" onclick="
