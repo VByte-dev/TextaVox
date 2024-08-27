@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,10 @@
   <link rel="icon" href="Stocks/Icon.png" type="image/x-icon">
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
   <!-- Navbar -->
   <div class="nav">
@@ -20,50 +23,52 @@
 
   <!-- Home -->
   <div class="home">
-       <!-- Right Side -->
-   <div id="homeR">
-    <section id="audioS"></section>
-    <div id="rTop">
-      <h1><b style="background-color: #fbca1f; padding: 0px 10px;">TextaVox</b> is a cutting-edge text-to-speech application</h1>
+    <!-- Right Side -->
+    <div id="homeR">
+      <section id="audioS"></section>
+      <div id="rTop">
+        <h1><b style="background-color: #fbca1f; padding: 0px 10px;">TextaVox</b> is a cutting-edge text-to-speech
+          application</h1>
+      </div>
+      <div id="rDown">
+
+        <div><audio id="audio" src=""></audio></div>
+
+        <div><button id="playB"><img height="25px" width="25px" src="Stocks/play.png"></button></div>
+        <div><button id="pauseB"><img height="25px" width="25px" src="Stocks/pause.png"></button></div>
+        <a id="audioD" target="_blank">
+          <div><button id="downloadB"><img height="25px" width="25px" src="Stocks/download.png"></button></div>
+        </a>
+
+      </div>
+      </section>
     </div>
-    <div id="rDown">
 
-      <div><audio id="audio" src=""></audio></div>
-
-      <div><button id="playB"><img height="25px" width="25px" src="Stocks/play.png"></button></div>
-      <div><button id="pauseB"><img height="25px" width="25px" src="Stocks/pause.png"></button></div>
-      <a id="audioD" target="_blank"><div><button id="downloadB"><img height="25px" width="25px" src="Stocks/download.png"></button></div></a>
-
-    </div>
-  </section>
-   </div>
-  
     <!-- Left Side -->
-   <div id="homeL">
-    <div id="character">
-      <label>Character : </label>
-      <button class="chr1" >Dan</button>
-      <button class="chr2">Will</button>
-      <button class="chr3">Scarlett</button>
-      <button class="chr4">Liv</button>
+    <div id="homeL">
+      <div id="character">
+        <label>Character : </label>
+        <button class="chr1">Dan</button>
+        <button class="chr2">Will</button>
+        <button class="chr3">Scarlett</button>
+        <button class="chr4">Liv</button>
+      </div>
+
+      <div id="speed">
+        <input id="speedB" type="number" placeholder="Specify the speed(-1.0 to 1.0)" min="-1.0" max="1.0" step="0.1">
+      </div>
+
+      <div id="pitch">
+        <input id='pitchB' type="number" placeholder="Specify the pitch(0.5 to 1.5)" min="0" max="1.5" step="0.1">
+      </div>
+      <div id="text"><textarea placeholder="Enter the text content" id="textContent" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="generateB"><a href="#audioS"><button id="generateB" onclick="
+    document.querySelector('#rDown').style.animation = '0.3s generateAnim 0s linear';" title="Generate"
+            document.querySelector('#rDown').offsetHeight;>Generate</button></a></div>
+
     </div>
-
-    <div id="speed">
-      <input id="speedB" type="number" placeholder="Specify the speed(-1.0 to 1.0)" min="-1.0" max="1.0" step="0.1">
-    </div>
-
-    <div id="pitch">
-      <input id='pitchB' type="number" placeholder="Specify the pitch(0.5 to 1.5)" min="0" max="1.5" step="0.1">
-    </div>
-    <div id="text"><textarea placeholder="Enter the text content" id="textContent" cols="30" rows="10"></textarea></div>
-
-    <div class="generateB"><a href="#audioS"><button id="generateB" onclick="
-    document.querySelector('#rDown').style.animation = '0.3s generateAnim 0s linear';"
-    title="Generate"
-    document.querySelector('#rDown').offsetHeight;
-    >Generate</button></a></div>
-
-   </div>
   </div>
 
   <!-- Footer -->
@@ -74,5 +79,17 @@
   </footer>
   <!-- Linking JS -->
   <script src="script.js"></script>
+  <!-- Loading Screen -->
+  <div class="loading">
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+    </div>
+  </div>
 </body>
+
 </html>

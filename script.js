@@ -44,6 +44,10 @@ document.querySelector(".chr4").addEventListener("click", () => {
 });
 
 document.querySelector("#generateB").addEventListener("click", () => {
+  document.querySelector('.loading').style.display = "flex";
+  setTimeout(()=>{
+    document.querySelector('.loading').style.display = "none";
+  }, 3000)
   let speed = document.querySelector("#speedB").value;
   // console.log(`Speed is ${speed}`);
   let pitch = document.querySelector("#pitchB").value;
@@ -106,7 +110,8 @@ document.querySelector("#generateB").addEventListener("click", () => {
       document.querySelector("#audio").src = audioFile;
       document.querySelector("#audioD").href = audioFile;
     } catch {
-      alert(`Something didn't work as expected`);
+      const next = confirm(`Something didn't work as expected`);
+      location.reload();
     }
   };
   ttos();
