@@ -62,6 +62,7 @@ body {
   border: 3px solid rgb(0, 0, 0);
   padding: 50px;
   border-radius: 0.4em;
+  font-size: large;
 }
 #homeR {
   order: 2;
@@ -86,11 +87,12 @@ body {
   margin: 5px 5px;
   border: none;
   height: 40px;
-  width: 80px;
   font-family: oddVal;
   border: 2px solid black;
   transition: 0.1s linear 0s;
   filter: drop-shadow(2px 2px black);
+  font-size: medium;
+  padding: 0px 20px;
 }
 #speed {
   margin-top: 20px;
@@ -101,8 +103,9 @@ body {
   border: 2px solid black;
   outline: none;
   font-family: oddVal;
-  padding: 10px;
+  padding: 10px 20px;
   width: 100%;
+  font-size: large;
 }
 #pitch {
   margin-top: 20px;
@@ -113,8 +116,9 @@ body {
   border: 2px solid black;
   outline: none;
   font-family: oddVal;
-  padding: 10px;
+  padding: 10px 20px;
   width: 100%;
+  font-size: large;
 }
 #text textarea {
   margin-top: 40px;
@@ -123,6 +127,7 @@ body {
   border: 3px solid black;
   outline: none;
   font-family: oddVal;
+  font-size: large;
   border-radius: 10px 10px 0px 10px;
   transition: 0.1s linear 0s;
 }
@@ -163,7 +168,6 @@ body {
   font-family: oddVal;
   border-radius: 100px;
   background-color: #fbca1f;
-  filter: drop-shadow(2px 2px black);
   transition: 0.1s linear 0s;
 }
 #homeR audio {
@@ -198,18 +202,15 @@ body {
     transform: translateY(0px);
   }
 }
-#homeR button:hover {
-  filter: drop-shadow(2.5px 2.5px black);
-}
-#homeR button:active {
-  filter: drop-shadow(1.5px 1.5px black);
-}
 #homeL input {
   border-radius: 5px;
   filter: drop-shadow(2px 2px black);
 }
 #homeL button:active {
   background-color: #fbca1f;
+}
+#homeR button:hover{
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Responsive */
@@ -239,6 +240,7 @@ body {
     border: 3px solid rgb(0, 0, 0);
     padding: 20px;
     border-radius: 0.4em;
+    font-size: medium;
   }
   #homeR {
     text-align: center;
@@ -249,6 +251,11 @@ body {
   #homeR h1 {
     font-size: x-large;
     margin-bottom: 20px;
+  }
+  #homeR button{
+    margin: 0px 5px;
+    height: 45px;
+    width: 45px;
   }
   #rDown {
     display: flex;
@@ -264,11 +271,11 @@ body {
     margin: 5px 3px;
     border: none;
     height: 40px;
-    width: 80px;
     font-family: oddVal; 
     border: 2px solid black;
     transition: 0.1s linear 0s;
     filter: drop-shadow(2px 2px black);
+    font-size: small;
   }
   #speed {
     margin-top: 10px;
@@ -281,6 +288,7 @@ body {
     font-family: oddVal;
     padding: 10px;
     width: 100%;
+    font-size: small;
   }
   #pitch {
     margin-top: 10px;
@@ -293,6 +301,7 @@ body {
     font-family: oddVal;
     padding: 10px;
     width: 100%;
+    font-size: small;
   }
   #text textarea {
     margin-top: 40px;
@@ -300,20 +309,9 @@ body {
     width: 100%;
     border: 3px solid black;
     outline: none;
-    font-family: oddVal;
     border-radius: 10px 10px 0px 10px;
     transition: 0.1s linear 0s;
-  }
-  #homeR button {
-    padding-top: 5px;
-    height: 45px;
-    width: 45px;
-    border: 3px solid black;
-    font-family: oddVal;
-    border-radius: 100px;
-    background-color: #fbca1f;
-    filter: drop-shadow(2px 2px black);
-    transition: 0.1s linear 0s;
+    font-size: small;
   }
   #homeR audio {
     height: 50px;
@@ -330,24 +328,11 @@ body {
     text-align: center;
   }
   #generateB {
-    background: #fbca1f;
-    font-family: inherit;
-    padding: 0.6em 1.3em;
     font-weight: 900;
     font-size: medium;
-    border: 3px solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    cursor: pointer;
   }
   /* Footer */
 .foot {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  background-color: black;
-  color: rgb(250, 210, 0);
 }
 }

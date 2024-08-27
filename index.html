@@ -30,11 +30,18 @@
       <h1><b style="background-color: #fbca1f; padding: 0px 10px;">TextaVox</b> is a cutting-edge text-to-speech application</h1>
     </div>
 
+    <section id="audioS">
     <div id="rDown">
-      <div><audio id="audio" src="" controls autoplay></audio></div>
-      <a id="audioD" href="#" target="_blank"><div><button id="downloadB"><span class="material-symbols-outlined">download</span></button></div></a>
+
+      <div><audio id="audio" src=""></audio></div>
+
+      <div><button id="playB"><img height="25px" width="25px" src="Stocks/play.png"></button></div>
+      <div><button id="pauseB"><img height="25px" width="25px" src="Stocks/pause.png"></button></div>
+      <a id="audioD" href="#" target="_blank"><div><button id="downloadB"><img height="25px" width="25px" src="Stocks/download.png"></button></div></a>
+
     </div>
    </div>
+  </section>
     <!-- Left Side -->
    <div id="homeL">
     <div id="character">
@@ -55,11 +62,11 @@
 
     <div id="text"><textarea placeholder="Enter the text content" id="textContent" cols="30" rows="10"></textarea></div>
 
-    <div class="generateB"><button id="generateB" onclick="
+    <div class="generateB"><a href="#audioS"><button id="generateB" onclick="
     document.querySelector('#rDown').style.animation = '0.3s generateAnim 0s linear';"
     title="Generate"
     document.querySelector('#rDown').offsetHeight;
-    >Generate</button></div>
+    >Generate</button></a></div>
 
    </div>
   </div>
