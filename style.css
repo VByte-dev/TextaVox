@@ -200,10 +200,28 @@ body {
 #homeR button:focus {
   background-color: rgba(0, 0, 0, 0);
 }
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
+h2::selection, h3::selection, h4::selection, h6::selection{
   background-color: #fbca1f;
 }
-
+h1::selection, h5::selection{
+  background-color: #fbca1f;
+  color: black;
+}
+label::selection{
+  color: #fbca1f;
+}
+input::selection{
+  color: #fbca1f;
+}
+img::selection{
+  background-color:  rgba(0,0,0,0);
+}
+button::selection{
+  background-color:  rgba(0,0,0,0);
+}
+textarea::selection{
+  background-color:  rgba(0,0,0,0);
+}
 /* Responsive */
 @media (max-width: 1300px) {
   /* Navbar */
