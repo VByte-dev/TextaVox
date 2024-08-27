@@ -164,7 +164,6 @@ body {
 
 /* Footer */
 .foot {
-  font-size: large;
   font-weight: bold;
   margin-top: 200px;
   display: flex;
@@ -323,6 +322,5 @@ body {
   /* Footer */
   .foot {
     margin-top: 100px;
-    font-size: small;
   }
 }

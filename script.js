@@ -102,7 +102,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
       const jData = await fData.json();
       // console.log(jData);
       let audioFile = jData.OutputUri;
-      // console.log(audioFile);
+      console.log(audioFile.slice(60));
       document.querySelector("#audio").src = audioFile;
       document.querySelector("#audioD").href = audioFile;
     } catch {
@@ -119,6 +119,5 @@ document.querySelector('#pauseB').addEventListener('click', ()=>{
   document.querySelector("audio").pause();
 })
 document.querySelector('#downloadB').addEventListener('click', ()=>{
-  alert('Downloading');
   document.querySelector("#audioD").download = 'TextaVox.mp3';
 })
