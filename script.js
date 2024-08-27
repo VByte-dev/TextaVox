@@ -65,7 +65,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
     } else if (speed < -1.0) {
       document.querySelector("#speedB").value = 0;
       speed = 0;
-    } else if (speed > 1.0) {
+    } else if (speed > 0.9) {
       document.querySelector("#speedB").value = 0;
       speed = 0;
     }
