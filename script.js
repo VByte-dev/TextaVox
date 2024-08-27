@@ -105,11 +105,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
       console.log(audioFile);
       document.querySelector("#audio").src = audioFile;
     } catch {
-      console.log('Something went wrong!');
-      document.querySelector('.alertBox').innerHTML = '<h5>Something went wrong!</h5>';
-      document.querySelector('.alertBox').style.display = 'block';
-      setTimeout(()=>document.querySelector('.alertBox').style.display = 'none', 1000);
-      setTimeout(()=>location.reload(), 1000);
+      alert('An error occurred!')
     }
   };
   ttos();

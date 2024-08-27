@@ -39,24 +39,12 @@ body {
   width: 40px;
 }
 
-.alertBox {
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-  display: none;
-  background-color: rgba(255, 191, 0, 0.573);
-  color: rgb(0, 0, 0);
-  position: fixed;
-  left: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  bottom: 30px;
-}
-
 /* Home */
 .home {
   padding: 50px 100px;
   display: flex;
   justify-content: space-around;
-  align-items: start;
+  align-items: center;
 }
 #homeL {
   border: 3px solid rgb(0, 0, 0);
@@ -66,7 +54,6 @@ body {
 }
 #homeR {
   order: 2;
-  margin: 100px;
   text-align: center;
   width: 500px;
 }
@@ -177,6 +164,8 @@ body {
 
 /* Footer */
 .foot {
+  font-size: large;
+  font-weight: bold;
   margin-top: 200px;
   display: flex;
   justify-content: center;
@@ -209,7 +198,7 @@ body {
 #homeL button:active {
   background-color: #fbca1f;
 }
-#homeR button:hover{
+#homeR button:focus {
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -252,7 +241,7 @@ body {
     font-size: x-large;
     margin-bottom: 20px;
   }
-  #homeR button{
+  #homeR button {
     margin: 0px 5px;
     height: 45px;
     width: 45px;
@@ -262,7 +251,7 @@ body {
     justify-content: center;
     gap: 10px;
     border: 3px solid rgb(0, 0, 0);
-    padding:20px;
+    padding: 20px;
     border-radius: 0.4em;
   }
 
@@ -271,7 +260,7 @@ body {
     margin: 5px 3px;
     border: none;
     height: 40px;
-    font-family: oddVal; 
+    font-family: oddVal;
     border: 2px solid black;
     transition: 0.1s linear 0s;
     filter: drop-shadow(2px 2px black);
@@ -332,7 +321,8 @@ body {
     font-size: medium;
   }
   /* Footer */
-.foot {
-  margin-top: 100px;
-}
+  .foot {
+    margin-top: 100px;
+    font-size: small;
+  }
 }
