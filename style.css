@@ -33,6 +33,7 @@ body {
   padding: 20px 60px;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 .nav img {
   height: 40px;
