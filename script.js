@@ -45,7 +45,7 @@ document.querySelector(".chr4").addEventListener("click", () => {
 
 document.querySelector("#generateB").addEventListener("click", () => {
   let speed = document.querySelector("#speedB").value;
-  console.log(`Speed is ${speed}`);
+  // console.log(`Speed is ${speed}`);
   let pitch = document.querySelector("#pitchB").value;
   // console.log(`Pitch is ${pitch}`);
   let textContent = document.querySelector("#textContent").value;
@@ -76,7 +76,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
       pitch = 1;
     }
     // Correcting the Text content
-    console.log(textContent);
+    // console.log(textContent);
     const options = {
       method: "POST",
       headers: {
