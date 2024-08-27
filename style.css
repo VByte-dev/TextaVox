@@ -203,7 +203,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
   /* Navbar */
   .nav {
     margin: 40px 30px 30px 30px;

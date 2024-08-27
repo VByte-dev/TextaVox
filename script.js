@@ -100,10 +100,11 @@ document.querySelector("#generateB").addEventListener("click", () => {
         options
       );
       const jData = await fData.json();
-      console.log(jData);
+      // console.log(jData);
       let audioFile = jData.OutputUri;
-      console.log(audioFile);
+      // console.log(audioFile);
       document.querySelector("#audio").src = audioFile;
+      document.querySelector("#audioD").href = audioFile;
     } catch {
       alert('An error occurred!')
     }
@@ -118,6 +119,6 @@ document.querySelector('#pauseB').addEventListener('click', ()=>{
   document.querySelector("audio").pause();
 })
 document.querySelector('#downloadB').addEventListener('click', ()=>{
-  document.querySelector("#audioD").href = audioFile;
-  document.querySelector('#audioD').document = 'TextaVox.mp3';
+  alert('Downloading');
+  document.querySelector("#audioD").download = 'TextaVox.mp3';
 })
