@@ -10,7 +10,7 @@ document.querySelector(".chr1").addEventListener("click", () => {
   document.querySelector(".chr2").style.backgroundColor = 'white';
   document.querySelector(".chr3").style.backgroundColor = 'white';
   document.querySelector(".chr4").style.backgroundColor = 'white';
-  console.log("Dan is selected");
+  // console.log("Dan is selected");
 });
 document.querySelector(".chr2").addEventListener("click", () => {
   character = "";
@@ -20,7 +20,7 @@ document.querySelector(".chr2").addEventListener("click", () => {
   document.querySelector(".chr2").style.backgroundColor = '#fbca1f';
   document.querySelector(".chr3").style.backgroundColor = 'white';
   document.querySelector(".chr4").style.backgroundColor = 'white';
-  console.log("Will is selected");
+  // console.log("Will is selected");
 });
 document.querySelector(".chr3").addEventListener("click", () => {
   character = "";
@@ -30,7 +30,7 @@ document.querySelector(".chr3").addEventListener("click", () => {
   document.querySelector(".chr2").style.backgroundColor = 'white';
   document.querySelector(".chr3").style.backgroundColor = '#fbca1f';
   document.querySelector(".chr4").style.backgroundColor = 'white';
-  console.log("Scarlett is selected");
+  // console.log("Scarlett is selected");
 });
 document.querySelector(".chr4").addEventListener("click", () => {
   character = "";
@@ -40,14 +40,14 @@ document.querySelector(".chr4").addEventListener("click", () => {
   document.querySelector(".chr2").style.backgroundColor = 'white';
   document.querySelector(".chr3").style.backgroundColor = 'white';
   document.querySelector(".chr4").style.backgroundColor = '#fbca1f';
-  console.log("Liv is selected");
+  // console.log("Liv is selected");
 });
 
 document.querySelector("#generateB").addEventListener("click", () => {
   let speed = document.querySelector("#speedB").value;
   console.log(`Speed is ${speed}`);
   let pitch = document.querySelector("#pitchB").value;
-  console.log(`Pitch is ${pitch}`);
+  // console.log(`Pitch is ${pitch}`);
   let textContent = document.querySelector("#textContent").value;
 
   const ttos = async () => {
@@ -102,11 +102,11 @@ document.querySelector("#generateB").addEventListener("click", () => {
       const jData = await fData.json();
       // console.log(jData);
       let audioFile = jData.OutputUri;
-      console.log(audioFile.slice(60));
+      // console.log(audioFile);
       document.querySelector("#audio").src = audioFile;
       document.querySelector("#audioD").href = audioFile;
     } catch {
-      alert('An error occurred!')
+      alert(`Something didn't work as expected`);
     }
   };
   ttos();
