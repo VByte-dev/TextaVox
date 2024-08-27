@@ -110,7 +110,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
       document.querySelector("#audio").src = audioFile;
       document.querySelector("#audioD").href = audioFile;
     } catch {
-      const next = confirm(`Something didn't work as expected`);
+      confirm(`Try Again!`);
       location.reload();
     }
   };
