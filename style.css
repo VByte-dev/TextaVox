@@ -312,6 +312,9 @@ textarea::selection{
   50%{
     opacity: 100%;
   }
+  75%{
+    opacity: 100%;
+  }
   100%{
     opacity: 0%;
   }
