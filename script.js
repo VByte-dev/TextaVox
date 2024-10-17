@@ -110,7 +110,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
       document.querySelector("#audio").src = audioFile;
       document.querySelector("#audioD").href = audioFile;
     } catch {
-      confirm(`Make sure you have used your API Key`);
+      confirm(`gKCKisndVjP0mWjxQInOITOql5pZfZGJ61Mz7hzB5SgiiDiK37NyqK`);
       location.reload();
     }
   };
