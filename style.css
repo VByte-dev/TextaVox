@@ -7,7 +7,6 @@
   font-family: akira;
   src: url(Fonts/Akira\ Expanded\ Demo.otf);
 }
-
 /* Boilerplate */
 * {
   margin: 0%;
@@ -23,7 +22,6 @@ body {
   font-family: oddVal;
   scroll-behavior: smooth;
 }
-
 /* Navbar */
 .nav {
   background-color: black;
@@ -39,7 +37,6 @@ body {
   height: 40px;
   width: 40px;
 }
-
 /* Home */
 .home {
   padding: 50px 100px;
@@ -69,7 +66,6 @@ body {
   padding: 50px;
   border-radius: 0.4em;
 }
-
 #character button {
   border-radius: 0.4em;
   margin: 5px 5px;
@@ -137,17 +133,14 @@ body {
   box-shadow: 0.1em 0.1em;
   cursor: pointer;
 }
-
 #generateB:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.15em 0.15em;
 }
-
 #generateB:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
 }
-
 #homeR button {
   padding-top: 5px;
   height: 50px;
@@ -162,7 +155,6 @@ body {
   border: 3px solid black;
   border-radius: 100px;
 }
-
 /* Footer */
 .foot {
   font-weight: bold;
@@ -174,7 +166,6 @@ body {
   background-color: black;
   color: rgb(250, 210, 0);
 }
-
 /* Animation and Others */
 #homeL .chr:focus {
   background-color: #fbca1f;
@@ -198,40 +189,44 @@ body {
 #homeL button:active {
   background-color: #fbca1f;
 }
-#homeR button:focus {
+#homeR button:active {
   background-color: rgba(0, 0, 0, 0);
 }
-h2::selection, h3::selection, h4::selection, h6::selection{
+h2::selection,
+h3::selection,
+h4::selection,
+h6::selection {
   background-color: #fbca1f;
 }
-h1::selection, h5::selection{
+h1::selection,
+h5::selection {
   background-color: #fbca1f;
   color: black;
 }
-label::selection{
+label::selection {
   color: #fbca1f;
 }
-input::selection{
+input::selection {
   color: #fbca1f;
 }
-img::selection{
-  background-color:  rgba(0,0,0,0);
+img::selection {
+  background-color: rgba(0, 0, 0, 0);
 }
-button::selection{
-  background-color:  rgba(0,0,0,0);
+button::selection {
+  background-color: rgba(0, 0, 0, 0);
 }
-textarea::selection{
-  background-color:  rgba(0,0,0,0);
+textarea::selection {
+  background-color: rgba(0, 0, 0, 0);
 }
 /* Entry Screen */
-.entry{
+.entry {
   opacity: 0%;
   height: 100%;
   width: 100%;
   background-color: black;
   position: fixed;
   top: 0px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -241,12 +236,12 @@ textarea::selection{
   animation-iteration-count: 1;
   animation-delay: 0s;
 }
-.entry img{
+.entry img {
   height: 50px;
   width: 50px;
 }
- /* Loading Screen */
- .loading {
+/* Loading Screen */
+.loading {
   display: none;
   align-items: center;
   justify-content: center;
@@ -257,14 +252,12 @@ textarea::selection{
   top: 0px;
   bottom: 0px;
 }
-
 .wrapper {
   width: 200px;
   height: 60px;
   position: relative;
   z-index: 1;
 }
-
 .circle {
   width: 20px;
   height: 20px;
@@ -273,9 +266,8 @@ textarea::selection{
   background-color: #fbca1f;
   left: 15%;
   transform-origin: 50%;
-  animation: circle7124 .5s alternate infinite ease;
+  animation: circle7124 0.5s alternate infinite ease;
 }
-
 @keyframes circle7124 {
   0% {
     top: 60px;
@@ -283,44 +275,39 @@ textarea::selection{
     border-radius: 50px 50px 25px 25px;
     transform: scaleX(1.7);
   }
-
   40% {
     height: 20px;
     border-radius: 50%;
     transform: scaleX(1);
   }
-
   100% {
     top: 0%;
   }
 }
-
 .circle:nth-child(2) {
   left: 45%;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 .circle:nth-child(3) {
   left: auto;
   right: 15%;
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
-@keyframes entryAnim{
-  0%{
+@keyframes entryAnim {
+  0% {
     opacity: 100%;
   }
-  50%{
+  50% {
     opacity: 100%;
   }
-  75%{
+  75% {
     opacity: 100%;
   }
-  100%{
+  100% {
     opacity: 0%;
   }
 }
-
-
 /* Responsive */
 @media (max-width: 1300px) {
   /* Navbar */
@@ -373,7 +360,6 @@ textarea::selection{
     padding: 20px;
     border-radius: 0.4em;
   }
-
   #character button {
     border-radius: 0.4em;
     margin: 5px 3px;
@@ -449,4 +435,3 @@ textarea::selection{
     height: 10px;
   }
 }
-

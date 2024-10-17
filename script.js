@@ -116,7 +116,6 @@ document.querySelector("#generateB").addEventListener("click", () => {
   };
   ttos();
 });
-
 document.querySelector('#playB').addEventListener('click', ()=>{
   document.querySelector("audio").play();
 });
