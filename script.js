@@ -87,7 +87,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
         accept: "application/json",
         "content-type": "application/json",
         Authorization:
-          "Bearer gKCKisndVjP0mWjxQInOITOql5pZfZGJ61Mz7hzB5SgiiDiK37NyqK",
+          "Your API Key",
       },
       body: JSON.stringify({
         Text: textContent,
@@ -110,7 +110,7 @@ document.querySelector("#generateB").addEventListener("click", () => {
       document.querySelector("#audio").src = audioFile;
       document.querySelector("#audioD").href = audioFile;
     } catch {
-      confirm(`Try Again!`);
+      confirm(`Make sure you have used your API Key`);
       location.reload();
     }
   };
